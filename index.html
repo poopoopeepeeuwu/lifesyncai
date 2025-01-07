@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeSync AI - Your Personal AI Life Coach</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <div class="page-container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="brain-container">
+                            <div class="brain-circles">
+                                <span class="circle c1"></span>
+                                <span class="circle c2"></span>
+                                <span class="circle c3"></span>
+                            </div>
+                            <div class="brain-waves">
+                                <span class="wave w1"></span>
+                                <span class="wave w2"></span>
+                                <span class="wave w3"></span>
+                            </div>
+                            <div class="brain-core">
+                                <i class="fas fa-brain"></i>
+                                <div class="synapse-points">
+                                    <span class="synapse s1"></span>
+                                    <span class="synapse s2"></span>
+                                    <span class="synapse s3"></span>
+                                    <span class="synapse s4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="logo-text">LifeSync AI</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#chat-interface" class="cta-button">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Transform Your Life with AI-Powered Coaching</h1>
+                    <p>Meet LifeSync AI, your personal life coach available 24/7 to help you achieve your goals and live your best life.</p>
+                    <button class="cta-button" onclick="scrollToChat()">Start Your Journey</button>
+                </div>
+            </section>
+
+            <section id="features" class="features">
+                <h2>Why Choose LifeSync AI?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Personalized Guidance</h3>
+                        <p>AI-driven insights tailored to your unique goals and challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7 Availability</h3>
+                        <p>Get support whenever you need it, day or night</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your growth with detailed analytics and insights</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Private & Secure</h3>
+                        <p>Your data is encrypted and kept completely confidential</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works" class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Sign Up</h3>
+                        <p>Create your account and tell us about your goals</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Connect</h3>
+                        <p>Start chatting with your AI life coach</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Transform</h3>
+                        <p>Follow your personalized plan and track progress</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="chat-demo" class="chat-demo">
+                <h2>See LifeSync AI in Action</h2>
+                <div class="chat-container">
+                    <div class="chat-messages">
+                        <div class="message ai-message">
+                            <div class="avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hi! I'm LifeSync AI. How can I help you today?</p>
+                            </div>
+                        </div>
+                        <div class="message user-message">
+                            <div class="message-content">
+                                <p>I want to start a morning routine but I'm struggling to stick to it.</p>
+                            </div>
+                        </div>
+                        <div class="message ai-message">
+                            <div class="avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>I understand how challenging that can be. Let's break it down together. What time would you ideally like to wake up?</p>
+                            </div>
+                        </div>
+                        <div class="message user-message">
+                            <div class="message-content">
+                                <p>I'd like to wake up at 6 AM but I keep hitting snooze.</p>
+                            </div>
+                        </div>
+                        <div class="message ai-message">
+                            <div class="avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Here's a practical tip: Place your alarm across the room and prepare your workout clothes the night before. Would you like me to create a personalized morning routine plan for you?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="chat-interface" class="chat-interface">
+                <h2>Chat with LifeSync AI</h2>
+                <div class="live-chat-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm LifeSync AI. How can I help you today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" id="userInput" placeholder="Type your message..." aria-label="Chat input">
+                        <button id="sendMessage" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-link">
+                    <a href="https://twitter.com/LifeSyncAI" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span>@LifeSyncAI</span>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 LifeSync AI</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="chat.js" defer></script>
+</body>
+</html> 
